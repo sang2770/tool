@@ -5,7 +5,7 @@ import { CvManagermentModule } from './modules/cv-managerment/cv-managerment.mod
 import { UsersModule } from './modules/users/users.module';
 
 @Module({
-  imports: [CvManagermentModule, UsersModule],
+  imports: [],
   controllers: [AppController],
   providers: [AppService],
 })

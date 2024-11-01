@@ -2,12 +2,10 @@ import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { UsersModule } from 'src/modules/users/users.module';
 import { SeederService } from './seeder/run.seeder';
-import { AuthorizeModule } from 'src/modules/authorize/authorize.module';
 
 @Module({
   imports: [
     UsersModule,
-    AuthorizeModule,
     TypeOrmModule.forRoot({
       type: 'postgres',
       host: 'db',
